@@ -1,0 +1,118 @@
+.doctors-page {
+  background-image: url("https://images.ctfassets.net/4f3rgqwzdznj/6S75t46n9f4u2odiOHH3Zy/6ec8f8e2552a7ad2ad49b8dfa7393fc2/Landing.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container-fluid {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  /* border: 1px solid green; */
+}
+
+.corner {
+  /* border: 1px solid red; */
+  padding: 0;
+}
+
+.corner a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.center-btn {
+  /* border: 1px solid green; */
+  /* display: flex; */
+  margin: 10px;
+}
+.center-btn div {
+  /* border: 1px solid green; */
+  width: 300px;
+
+  border-radius: 15px;
+  padding: 6px 3px;
+  background-color: #d5f5ff;
+  margin: 2px auto;
+}
+
+.center-btn div a {
+  text-decoration: none;
+}
+.center-btn div .btn1 {
+  background-color: blue;
+  padding: 6px 29px;
+  margin-left: 0;
+  font-size: 16px;
+  border-radius: 15px;
+  color: #fff;
+}
+.center-btn div .btn2 {
+  padding-left: 25px;
+  /* border: 1px solid green; */
+  color: blue;
+  width: 100%;
+  /* margin-right: 0; */
+  font-size: 16px;
+}
+
+.main-page {
+  /* border: 2px solid blue; */
+  width: 65%;
+  text-align: center;
+  margin: 10px auto;
+}
+.main-page h3 {
+  margin: 15px 5px;
+
+  font-weight: 501;
+}
+.main-page p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main-page .inputs {
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px 2px;
+}
+.main-page .inputs select,
+.main-page .inputs p {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.main-page .inputs select {
+  padding: 4px 25px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  /* box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.767); */
+}
+.main-page .inputs p {
+  background-color: lightgrey;
+  color: #000;
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .doctors-page {
+    background: #fde677;
+  }
+  .main-page {
+    width: 95%;
+  }
+  .main-page .inputs select,
+  .main-page .inputs p {
+    display: block;
+    width: 90%;
+    margin: 2px auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-fluid {
+    padding-top: 130px;
+  }
+}

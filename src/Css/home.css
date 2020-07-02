@@ -1,0 +1,402 @@
+.main-container {
+  /* padding-top: 100px; */
+  display: block;
+  /* border: 2px solid red; */
+}
+.main-container .main-content {
+  /* border: 2px solid blue; */
+  position: relative;
+  width: 90%;
+
+  margin: 0 auto;
+  /* padding: 30px 0px; */
+  margin-top: 130px;
+}
+.main-content .welcome-text {
+  display: block !important;
+  /* border: 1px solid blue; */
+  margin: 20px 3px;
+  width: 100%;
+}
+.main-content .welcome-text h5 {
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.search-form {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: 25px auto;
+  text-align: center;
+}
+.search-form form {
+  padding: 5px 5px;
+  width: 90%;
+  margin: 1px auto;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  align-items: center;
+}
+
+.search-form form input {
+  width: 70%;
+  padding-left: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 46px;
+}
+
+.search-form form i {
+  position: absolute;
+  top: 50%;
+  margin-top: -1%;
+  left: 15px;
+  color: rgba(107, 90, 90, 0.678);
+}
+.search-form form button {
+  background-color: #0049db;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 3px;
+  right: 0;
+  padding: 10px 1.4px;
+  width: 30%;
+}
+.search-form form button:hover {
+  color: #fff;
+}
+
+/* //sales */
+
+.sales {
+  width: 90%;
+  padding: 2px;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.sales .main-sales {
+  /* border: 1px solid blue; */
+  margin: 12px 0px;
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px 0px;
+}
+.sales h5 {
+  /* border: 1px solid blue; */
+  width: 90%;
+  font-size: 18px;
+  margin: 0px auto;
+}
+.main-sales p {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 6px 0px;
+  margin-right: 7px;
+  margin-left: 1px;
+  font-size: 16.7px;
+}
+.main-sales p:hover {
+  background-color: #fff;
+}
+.main-sales p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.ad {
+  position: relative;
+
+  /* border: 1px solid red; */
+  width: 60%;
+  margin: 20px auto;
+  margin-top: 45px;
+  background-color: #fffac5;
+  display: flex;
+  border-radius: 5px;
+}
+
+.ad .ad-content {
+  /* border: 1px solid blue; */
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+}
+.ad .ad-content h6 {
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.ad .ad-content p {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* .ad .ad-content p:hover, */
+
+.ad .ad-content span {
+  color: blue;
+}
+.ad img {
+  margin-left: -10px;
+}
+.ad .icon {
+  margin-right: 0;
+  margin-top: 35px;
+}
+
+.final {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: 20px auto;
+}
+
+.final p {
+  margin: 5px auto;
+  margin-bottom: 10px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.final div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.final div img {
+  height: auto;
+  max-width: 100%;
+}
+/* TODO:Firstbreakpoint */
+@media (max-width: 1200px) {
+  .search-form form button {
+    font-size: 15px;
+  }
+}
+@media (max-width: 993px) {
+  .search-form form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-form form input {
+    width: 100%;
+  }
+  .search-form form button {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .search-form form i {
+    margin-top: -6%;
+  }
+  .ad {
+    width: 90%;
+  }
+
+  .ad .ad-content {
+    /* border: 1px solid blue; */
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .ad .ad-content h6 {
+    font-size: 16px;
+  }
+
+  .ad .ad-content p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 770px) {
+  .main-content .welcome-text h5 {
+    font-size: 20px;
+    font-weight: 501;
+  }
+  .search-form form i {
+    margin-top: -7%;
+  }
+
+  .sales h5 {
+    width: 100%;
+  }
+  .sales .main-sales {
+    width: 100%;
+  }
+  .search-form form {
+    width: 100%;
+  }
+  .ad {
+    width: 90%;
+  }
+
+  .ad .ad-content {
+    /* border: 1px solid blue; */
+    width: 100%;
+    text-align: left;
+    padding-left: 14px;
+  }
+  .ad .ad-content h6 {
+    font-size: 15px;
+  }
+
+  .ad .ad-content p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+/* TODO:Firstbreakpoint */
+@media (max-width: 567px) {
+  .main-content .welcome-text {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .main-content .welcome-text h5 {
+    font-size: 20px;
+    font-weight: 501;
+  }
+  .search-form {
+    width: 100%;
+  }
+  .sales {
+    width: 100%;
+  }
+
+  .sales .main-sales p a {
+    font-size: 18px;
+  }
+  .search-form form button {
+    font-size: 16px;
+  }
+  .search-form form i {
+    margin-top: -8%;
+  }
+  .ad {
+    width: 90%;
+  }
+
+  .ad .ad-content {
+    /* border: 1px solid blue; */
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .ad .ad-content h6 {
+    font-size: 12px;
+  }
+
+  .ad .ad-content p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+/* TODO:Thirdbreakpoint */
+@media (max-width: 488px) {
+  .main-content .welcome-text {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .main-content .welcome-text h5 {
+    font-size: 18px;
+    font-weight: 501;
+  }
+
+  .search-form form i {
+    margin-top: -10%;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+  .sales {
+    width: 100%;
+  }
+  .sales .main-sales p a {
+    font-size: 14px;
+  }
+  .search-form form button {
+    font-size: 14px;
+  }
+  .ad {
+    width: 90%;
+  }
+
+  .ad .ad-content {
+    /* border: 1px solid blue; */
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .ad .ad-content h6 {
+    font-size: 12px;
+  }
+
+  .ad .ad-content p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .final div {
+    display: block;
+  }
+  .final div img {
+    display: inline-block;
+    margin: 4px 5px;
+    margin-right: 10px;
+  }
+}
+
+/* TODO:Fourthbreakpoint */
+@media (max-width: 420px) {
+  .main-content .welcome-text {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .main-content .welcome-text h5 {
+    font-size: 15px;
+    font-weight: 501;
+  }
+  .search-form {
+    width: 100%;
+  }
+  .sales {
+    width: 100%;
+  }
+  .sales .main-sales p a {
+    font-size: 14px;
+  }
+  .search-form form button {
+    font-size: 14px;
+  }
+  .search-form form i {
+    margin-top: -11.7%;
+  }
+  .ad {
+    width: 90%;
+  }
+
+  .ad .ad-content {
+    /* border: 1px solid blue; */
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .ad .ad-content h6 {
+    font-size: 11px;
+  }
+
+  .ad .ad-content p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
